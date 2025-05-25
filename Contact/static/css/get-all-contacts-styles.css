@@ -1,0 +1,120 @@
+/* Container for the contact list */
+.contacts-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2c2c44;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page heading */
+.contacts-container > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00ADB5;
+}
+
+/* Individual contact card */
+.contact {
+    background-color: #3a3a5c;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Contact name */
+.contact-name {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Contact phone */
+.contact-phone {
+    font-size: 16px;
+    color: #ccc;
+    margin: 0;
+}
+
+/* Edit and Delete buttons */
+.contact .edit,
+.contact .delete {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Edit button styling */
+.contact .edit {
+    background-color: #00adb5;
+    color: white;
+}
+
+.contact .edit:hover {
+    background-color: #00929a;
+    transform: scale(1.05);
+}
+
+/* Delete button styling */
+.contact .delete {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.contact .delete:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+/* Responsive: Stack buttons side-by-side if needed */
+@media (min-width: 500px) {
+    .contact {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact .edit,
+    .contact .delete {
+        width: auto;
+    }
+}
+
+
+.Warning-text {
+    color: #ff6b6b;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #2b2b2b;
+    padding: 20px;
+    border: 2px dashed #ff6b6b;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(255, 107, 107, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Optional: subtle fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

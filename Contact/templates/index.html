@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index-styles.css') }}">
+{% endblock %}
+{% block title %}Welcome — Contact Organizer{% endblock %}
+
+{% block content %}
+<div class="landing-container">
+    <h2 class="landing-heading">Welcome to Contact Organizer 📒</h2>
+    <p class="landing-description">
+        Easily manage your personal or business contacts in one place.  
+        Add, edit, and delete contacts effortlessly with our clean and intuitive interface.
+    </p>
+    <a href="{{ url_for('create_contact_page') }}" class="landing-btn">Get Started</a>
+</div>
+{% endblock %}

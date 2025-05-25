@@ -1,0 +1,163 @@
+/* Base Dark Theme */
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Nav Menu */
+.nav-menu {
+    background-color: #1E1E1E;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    border-bottom: 1px solid #333;
+}
+
+/* Logo Text */
+.logo-h1-text {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #F5F5F5;
+}
+
+/* Nav Links */
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00BFFF; /* Deep Sky Blue */
+    background-color: rgba(0,191,255, 0.1);
+    border-radius: 5px;
+}
+
+/* Buttons */
+.btn-outline-light {
+    border-color: #ccc;
+    color: #E0E0E0;
+}
+
+.btn-outline-light:hover {
+    background-color: #E0E0E0;
+    color: #121212;
+}
+
+.btn-outline-info {
+    border-color: #00BFFF;
+    color: #00BFFF;
+}
+
+.btn-outline-info:hover {
+    background-color: #00BFFF;
+    color: #121212;
+}
+
+/* Utilities */
+ul.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+}
+
+ul.nav li {
+    margin-left: 10px;
+}
+
+/* Profile Area Placeholder */
+.profile {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+/* Responsive Tweak */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: start;
+    }
+    ul.nav {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+/* Create Contact Button - Vibrant Emerald Green */
+.create-contact-btn .btn {
+    background-color: #2ecc71; /* Emerald Green */
+    color: #121212;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-contact-btn .btn:hover {
+    background-color: #27ae60; /* Slightly darker on hover */
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+
+/* Contacts Button - Bright Orange */
+.contacts-btn .btn {
+    background-color: #f39c12; /* Bright Orange */
+    color: #121212;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contacts-btn .btn:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+.footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Image Styling */
+.footer-image img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 30%;
+    border: 2px solid #444;
+    transition: transform 0.3s ease;
+}
+
+.footer-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustment */
+@media (max-width: 576px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-image {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Prevent footer image from shrinking */
+.footer-image img {
+    flex-shrink: 0;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #6c757d; /* Optional: subtle border */
+}

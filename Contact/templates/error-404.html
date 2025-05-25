@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/error-404-styles.css') }}">
+{% endblock %}
+{% block title %}Error 404 - Page not Found{% endblock %}
+
+{% block content %}
+<div class="error-container">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-message">Oops. Page not found</h2>
+    <p class="error-description">Possibly you entered wrong link.</p>
+
+    <!-- IMAGE BLOCK — add your image here -->
+    {# <img src="{{ url_for('static', filename='images/Alucard.jpg') }}" alt="404 image" class="error-image"> #}
+
+    <a href="{{ url_for('LandingPage') }}" class="error-home-link">Back to main page</a>
+</div>
+{% endblock %}

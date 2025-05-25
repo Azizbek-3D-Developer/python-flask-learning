@@ -1,0 +1,43 @@
+/* Container Styling */
+.about-container {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Title */
+.about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00bfff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Paragraphs */
+.about-container p {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Strong elements for field names */
+.about-container strong {
+    color: #f5f5f5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-container {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    .about-title {
+        font-size: 1.5rem;
+    }
+}

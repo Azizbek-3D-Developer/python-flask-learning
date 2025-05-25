@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about-page-styles.css') }}">
+{% endblock %}
+{% block title %}About — Contact Organizer{% endblock %}
+
+{% block content %}
+<section class="about-container">
+    <h2 class="about-title">Contact organizer</h2>
+    <p><strong>Developer:</strong> Azizbek Axmatjonov</p>
+    <p><strong>Development Start Date:</strong> 24 May 2025</p>
+    <p><strong>Used Libraries of Python:</strong> Flask, Flask-SQLAlchemy, Jinja2, Bootstrap 5</p>
+    <p><strong>Framework:</strong> Web-application on Python (Flask), IDE Visual Studio Code</p>
+</section>
+{% endblock %}

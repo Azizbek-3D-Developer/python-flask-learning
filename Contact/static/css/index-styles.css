@@ -1,0 +1,50 @@
+.landing-container {
+    text-align: center;
+    padding: 80px 20px;
+    color: #e0e0e0;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.landing-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00adb5;
+}
+
+.landing-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.landing-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00adb5;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.landing-btn:hover {
+    background-color: #008c93;
+    transform: scale(1.05);
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

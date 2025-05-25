@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/create-contact-styles.css') }}">
+{% endblock %}
+{% block title %}Create{% endblock %}
+
+{% block content %}
+    <div class="create-contact-container">
+        {% if error %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endif %}
+        <form class="contact-creation-form" method="post">
+            <h1>Create new Contact</h1>
+            <input type="text" class="user-input" name="user-name"  id="user-name" placeholder="Contact Name"  required  minlength="2"  maxlength="100">
+            <input type="tel"  class="user-input"  name="user-phone" id="user-phone" placeholder="Phone Number" required pattern="[0-9]{10,20}"  title="Phone number must be between 10 and 20 digits">
+            <input type="submit" class="btn" value="Create">
+
+        </form>
+    </div>
+
+{% endblock %}
