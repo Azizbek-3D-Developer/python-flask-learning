@@ -73,3 +73,34 @@
         padding: 1.5rem;
     }
 }
+
+
+/* Extra Mobile Adjustments */
+@media (max-width: 576px) {
+    .create-contact-container {
+        padding: 1rem;
+    }
+
+    .contact-creation-form {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .contact-creation-form h1 {
+        font-size: 1.5rem;
+    }
+
+    .user-input {
+        font-size: 0.95rem;
+        padding: 0.65rem 0.9rem;
+    }
+
+    .contact-creation-form .btn {
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+    }
+
+    .alert {
+        font-size: 0.95rem;
+    }
+}

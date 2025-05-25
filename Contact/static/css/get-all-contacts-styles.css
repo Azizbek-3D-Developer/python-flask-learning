@@ -118,3 +118,48 @@
         transform: translateY(0);
     }
 }
+
+/* Responsive: Mobile Layout */
+@media (max-width: 576px) {
+    .contacts-container {
+        margin: 30px 15px;
+        padding: 15px;
+    }
+
+    .contacts-container > h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .contact-name {
+        font-size: 1.1rem;
+    }
+
+    .contact-phone {
+        font-size: 0.95rem;
+    }
+
+    .contact .edit,
+    .contact .delete {
+        width: 100%;
+        text-align: center;
+        margin-top: 8px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .contact .edit {
+        margin-bottom: 10px;
+    }
+
+    .Warning-text {
+        font-size: 1rem;
+        padding: 15px;
+        margin: 30px 10px;
+    }
+}

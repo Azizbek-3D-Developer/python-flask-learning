@@ -48,3 +48,24 @@
         transform: translateY(0);
     }
 }
+
+
+/* Responsive Design for Landing Page */
+@media (max-width: 576px) {
+    .landing-container {
+        padding: 60px 15px;
+    }
+
+    .landing-heading {
+        font-size: 26px;
+    }
+
+    .landing-description {
+        font-size: 16px;
+    }
+
+    .landing-btn {
+        font-size: 0.95rem;
+        padding: 10px 24px;
+    }
+}

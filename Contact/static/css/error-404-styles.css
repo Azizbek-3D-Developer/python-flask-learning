@@ -54,3 +54,31 @@
     background-color: #008d94;
     transform: scale(1.05);
 }
+
+/* Responsive adjustments for 404 page */
+@media (max-width: 576px) {
+    .error-container {
+        padding: 40px 15px;
+    }
+
+    .error-code {
+        font-size: 72px;
+    }
+
+    .error-message {
+        font-size: 20px;
+    }
+
+    .error-description {
+        font-size: 14px;
+    }
+
+    .error-home-link {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+
+    .error-image {
+        width: 220px;
+    }
+}

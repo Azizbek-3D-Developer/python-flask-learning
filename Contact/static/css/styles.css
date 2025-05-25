@@ -161,3 +161,109 @@ ul.nav li {
     object-fit: cover;
     border: 2px solid #6c757d; /* Optional: subtle border */
 }
+
+/* Responsive Layout Improvements */
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu .logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    ul.nav {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    ul.nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    ul.nav li a.btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile {
+        align-self: center;
+    }
+
+    .profile-img {
+        width: 60px;
+        height: 60px;
+    }
+}
+/* Small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    .logo-h1-text {
+        font-size: 1.5rem;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    /* Profile image: bigger, circular, with subtle border and shadow */
+    .logo .profile {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid #00bfff;
+        box-shadow: 0 0 8px rgba(0, 191, 255, 0.6);
+        margin: 0 auto;
+        transition: transform 0.3s ease;
+    }
+
+    .logo .profile:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
+    }
+
+    .profile-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .footer-image {
+        margin-bottom: 1rem;
+    }
+
+    .footer-image img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .create-contact-btn .btn,
+    .contacts-btn .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+}
