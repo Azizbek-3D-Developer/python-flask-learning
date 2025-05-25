@@ -119,8 +119,8 @@ def page_not_found(e):
 
 # Runing the Project
 if __name__ == "__main__":
-    application.run(debug=True) # runing the local server for Development
-    # application.run(debug=False) # After production
+    # application.run(debug=True) # runing the local server for Development
+    application.run(debug=False) # After production
     
     
 # Runing instruction
